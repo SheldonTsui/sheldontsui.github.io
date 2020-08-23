@@ -1,0 +1,148 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Recursive Visual Sound Separation Using Minus-Plus Net</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="
+Sounds provide rich semantics, complementary to visual
+data, for many tasks. However, in practice, sounds from
+multiple sources are often mixed together. In this paper
+we propose a novel framework, referred to as MinusPlus
+Network (MP-Net), for the task of visual sound separation.
+MP-Net separates sounds recursively in the order of average energy,
+removing the separated sound from the mixture at the end of each prediction, until the mixture becomes
+empty or contains only noise. In this way, MP-Net could be
+applied to sound mixtures with arbitrary numbers and types
+of sounds. Moreover, while MP-Net keeps removing sounds
+with large energy from the mixture, sounds with small energy could emerge and become clearer, so that the separation is more accurate. Compared to previous methods,
+MP-Net obtains state-of-the-art results on two large scale
+datasets, across mixtures with different types and numbers
+of sounds.
+">
+<meta name="keywords" content="Visual Sound Separation; Self-supervised Learning; Deep learning;">
+<link rel="author" href="https://SheldonTsui.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./MP-Net/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./MP-Net/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./MP-Net/iconize.css">
+<script async="" src="./MP-Net/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+
+      <div class="section head">
+	<h1>Recursive Visual Sound Separation Using Minus-Plus Net</h1>
+
+	<div class="authors">
+	  <a href="https://sheldontsui.github.io/">Xudong Xu*</a></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://daibo.info/">Bo Dai</a></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://dahua.me/">Dahua Lin</a></sup>
+	</div>
+
+	<div class="affiliations">
+
+    <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory, </a> <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
+	<div class="venue">International Conference on Computer Vision (<a href="https://iccv2019.thecvf.com/" target="_blank">ICCV</a>) 2019 </div>
+      </div>
+
+      <center><img src="./MP-Net/overview.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+	Sounds provide rich semantics, complementary to visual
+	data, for many tasks. However, in practice, sounds from
+	multiple sources are often mixed together. In this paper
+	we propose a novel framework, referred to as MinusPlus
+	Network (MP-Net), for the task of visual sound separation.
+	MP-Net separates sounds recursively in the order of average energy,
+	removing the separated sound from the mixture at the end of each prediction, until the mixture becomes
+	empty or contains only noise. In this way, MP-Net could be
+	applied to sound mixtures with arbitrary numbers and types
+	of sounds. Moreover, while MP-Net keeps removing sounds
+	with large energy from the mixture, sounds with small energy could emerge and become clearer, so that the separation is more accurate. Compared to previous methods,
+	MP-Net obtains state-of-the-art results on two large scale
+	datasets, across mixtures with different types and numbers
+	of sounds.
+	</p>
+      </div>
+
+<div class="section demo">
+	<h2>Demo Video</h2>
+	<br>
+	<center>
+	  <iframe width="640" height="360" src="https://www.youtube.com/embed/io_myrxtA4I" frameborder="0" allowfullscreen></iframe>
+	</video>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://arxiv.org/abs/1908.11602" target="_blank" class="imageLink"><img src="./MP-Net/paper_icon.png"></a><br>
+		  <a href="https://arxiv.org/abs/1908.11602" target="_blank">Paper</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section code">
+	<h2>Code</h2>
+	<center>
+	  <ul>
+
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://github.com/SheldonTsui/Minus-Plus-Network" target="_blank" class="imageLink"><img src="./MP-Net/code.png"></a><br>
+		  <a href="https://github.com/SheldonTsui/Minus-Plus-Network" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>
+@inproceedings{xu2019recursive,
+  title={Recursive visual sound separation using minus-plus net},
+  author={Xu, Xudong and Dai, Bo and Lin, Dahua},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={882--891},
+  year={2019}
+}
+</pre>
+<br>
+
+	  </div>
+      </div>
+
+</body></html>
+
