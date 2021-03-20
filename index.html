@@ -191,22 +191,24 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
           <tr>
             <td width="25%" align="center">
-              <img src="pictures/per_ddpg.png" alt="ddpg" width="220" height="100">
+              <img src="pictures/pseudobinaural.png" alt="pseudobinaural" width="220" height="100">
             </td>
             <td width="75%" valign="top">
               <p>
-                <papertitle>A Novel DDPG Method with Prioritized Experience Replay</papertitle>
+                <papertitle>Visually Informed Binaural Audio Generation without Binaural Audios</papertitle>
                 <br>
-                Yuenan Hou, Lifeng Liu, Qing Wei, <strong>Xudong Xu</strong>, Chunlin Chen
+                <strong>Xudong Xu*</strong>, Hang Zhou*, Ziwei Liu, Bo Dai, Xiaogang Wang, Dahua Lin
                 <br>
-                <em>IEEE International Conference on Systems, Man, and Cybernetics (SMC)</em>, 2017
+                <em>In Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR)</em>, 2021
                 <br>
-                <a href="https://arxiv.org/pdf/1904.09571.pdf">[paper]</a>
-                <a href="https://github.com/cardwing/Codes-for-RL-PER">[code]</a>
+                <a href="https://sheldontsui.github.io/">[paper]</a>
+                <a href="https://github.com/SheldonTsui/PseudoBinaural_CVPR2021">[code]</a>
+                <a href="https://sheldontsui.github.io/projects/PseudoBinaural">[project]</a>
                 <br>
                 <p>
-                    We proposed a prioritized experience replay method for the DDPG algorithm, 
-                    where prioritized sampling is adopted instead of uniform sampling.
+                  We leverage spherical harmonic decomposition and head-related impulse response (HRIR)
+                  to create the pseudo the pair of visual scenes and binaural audios, which can be used to
+                  guide the training of binaural audio generation.
                 </p>
             </td>
           </tr>
@@ -216,22 +218,24 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
           <tr>
             <td width="25%" align="center">
-              <img src="pictures/soundsep.png" alt="soundsep" width="220" height="110">
+              <img src="pictures/sepstereo.png" alt="sepstereo" width="220" height="120">
             </td>
             <td width="75%" valign="top">
               <p>
-                <papertitle>Recursive Visual Sound Separation Using Minus-Plus Net</papertitle>
+                <papertitle>Sep-Stereo: Visually Guided Stereophonic Audio Generation by Associating Source Separation</papertitle>
                 <br>
-                <strong>Xudong Xu</strong>, Bo Dai, Dahua Lin
+                Hang Zhou*, <strong>Xudong Xu*</strong>, Dahua Lin, Xiaogang Wang, Ziwei Liu
                 <br>
-                <em>In Proceedings of the IEEE International Conference on Computer Vision (ICCV)</em>, 2019
+                <em>In Proceedings of the European Conference on Computer Vision (ECCV)</em>, 2020
                 <br>
-                <a href="https://arxiv.org/pdf/1908.11602.pdf">[paper]</a>
-                <a href="https://github.com/SheldonTsui/Minus-Plus-Network">[code]</a>
-                <a href="https://sheldontsui.github.io/projects/MP-Net">[project]</a>
+                <a href="https://arxiv.org/pdf/2007.09902.pdf">[paper]</a>
+                <a href="https://github.com/SheldonTsui/SepStereo_ECCV2020">[code]</a>
+                <a href="https://hangz-nju-cuhk.github.io/projects/Sep-Stereo">[project]</a>
                 <br>
                 <p>
-                    We proposed a recursive Minus-Plus network for visual sound separation task.
+                    We propose to integrate the task of stereophonic audio generation 
+                    and audio source separation into a unified framework namely Sep-Stereo, 
+                    which leverages vastly available mono audios to facilitate the training of stereophonic audio generation.
                 </p>
             </td>
           </tr>
@@ -267,29 +271,52 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
           <tr>
             <td width="25%" align="center">
-              <img src="pictures/sepstereo.png" alt="sepstereo" width="220" height="120">
+              <img src="pictures/soundsep.png" alt="soundsep" width="220" height="110">
             </td>
             <td width="75%" valign="top">
               <p>
-                <papertitle>Sep-Stereo: Visually Guided Stereophonic Audio Generation by Associating Source Separation</papertitle>
+                <papertitle>Recursive Visual Sound Separation Using Minus-Plus Net</papertitle>
                 <br>
-                Hang Zhou*, <strong>Xudong Xu*</strong>, Dahua Lin, Xiaogang Wang, Ziwei Liu
+                <strong>Xudong Xu</strong>, Bo Dai, Dahua Lin
                 <br>
-                <em>In Proceedings of the European Conference on Computer Vision (ECCV)</em>, 2020
+                <em>In Proceedings of the IEEE International Conference on Computer Vision (ICCV)</em>, 2019
                 <br>
-                <a href="https://arxiv.org/pdf/2007.09902.pdf">[paper]</a>
-                <a href="https://github.com/SheldonTsui/SepStereo_ECCV2020">[code]</a>
-                <a href="https://hangz-nju-cuhk.github.io/projects/Sep-Stereo">[project]</a>
+                <a href="https://arxiv.org/pdf/1908.11602.pdf">[paper]</a>
+                <a href="https://github.com/SheldonTsui/Minus-Plus-Network">[code]</a>
+                <a href="https://sheldontsui.github.io/projects/MP-Net">[project]</a>
                 <br>
                 <p>
-                    We propose to integrate the task of stereophonic audio generation 
-                    and audio source separation into a unified framework namely Sep-Stereo, 
-                    which leverages vastly available mono audios to facilitate the training of stereophonic audio generation.
+                    We proposed a recursive Minus-Plus network for visual sound separation task.
                 </p>
             </td>
           </tr>
 
         </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+          <tr>
+            <td width="25%" align="center">
+              <img src="pictures/per_ddpg.png" alt="ddpg" width="220" height="100">
+            </td>
+            <td width="75%" valign="top">
+              <p>
+                <papertitle>A Novel DDPG Method with Prioritized Experience Replay</papertitle>
+                <br>
+                Yuenan Hou, Lifeng Liu, Qing Wei, <strong>Xudong Xu</strong>, Chunlin Chen
+                <br>
+                <em>IEEE International Conference on Systems, Man, and Cybernetics (SMC)</em>, 2017
+                <br>
+                <a href="https://arxiv.org/pdf/1904.09571.pdf">[paper]</a>
+                <a href="https://github.com/cardwing/Codes-for-RL-PER">[code]</a>
+                <br>
+                <p>
+                    We proposed a prioritized experience replay method for the DDPG algorithm, 
+                    where prioritized sampling is adopted instead of uniform sampling.
+                </p>
+            </td>
+          </tr>
+
+        </table>        
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
