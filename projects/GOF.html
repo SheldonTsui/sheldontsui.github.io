@@ -131,17 +131,30 @@ simultaneously learn compact and smooth object surfaces.
 			</center>
 		</div>
 	</div>
+	<br>
+	<hr>
+
+	<div class="row align-items-center">
+		<div class="col justify-content-center text-center">
+			<center>
+				<video width="90%" playsinline="" autoplay="" loop="" preload="" muted="">
+					<source src="./GOF/GOF-interp.mp4" type="video/mp4">
+				</video>
+			</center>
+		</div>
+	</div>
+	
 </div>
 
 <div class="section method">
 	<h2>Method Overview</h2>
 	<br>
 	<center><img src="./GOF/GOF_method.jpg" border="0" width="90%"><br><br>
-		Our method GOF is capable of learning 3D models only from a collection of unposed images.
-		In contrast with generative radiance fields (GRAFs), GOF predicts occupancy values directly instead of volume densities.
-		During training, the sampling interval will shrink gradually as the training goes.
-		For inference, we can use cumulative rendering for rendering and alternatively render only with the surface points.
 	</center>
+	Our method GOF is capable of learning 3D models only from a collection of unposed images.
+	In contrast with generative radiance fields (GRAFs), GOF predicts occupancy values directly instead of volume densities.
+	During training, the sampling interval will shrink gradually as the training goes.
+	For inference, we can use cumulative rendering for rendering and alternatively render only with the surface points.
 </div>
 
 <br>
@@ -212,6 +225,33 @@ simultaneously learn compact and smooth object surfaces.
 <div class="section relatedwork">
     <h2>Related Works</h2>
     <br>
+	<div class="citation">
+		Katja Schwarz, Yiyi Liao, Michael Niemeyer, Andreas Geiger.
+		<a href="https://proceedings.neurips.cc/paper/2020/file/e92e1b476bb5262d793fd40931e0ed53-Paper.pdf">
+			GRAF: Generative Radiance Fields for 3D-Aware Image Synthesis.
+		</a>
+		NeurIPS 2020.
+      <br>
+    </div>
+	
+	<div class="citation">
+		Eric Chan*, Marco Monteiro*, Petr Kellnhofer, Jiajun Wu, Gordon Wetzstein.
+		<a href="https://arxiv.org/abs/2012.00926">
+			pi-GAN: Periodic Implicit Generative Adversarial Networks for 3D-Aware Image Synthesis.
+		</a>
+		CVPR 2021.
+      <br>
+    </div>
+
+	<div class="citation">
+		Xingang Pan, Xudong Xu, Chen Change Loy, Christian Theobalt, Bo Dai.
+		<a href="https://arxiv.org/abs/2110.15678">
+			A Shading-Guided Generative Implicit Model for Shape-Accurate 3D-Aware Image Synthesis.
+		</a>
+		NeurIPS 2021.
+      <br>
+    </div>
+	
     <div class="citation">
 		Michael Oechsle, Songyou Peng, Andreas Geiger.
       	<a href="https://arxiv.org/abs/2104.10078">
@@ -220,6 +260,7 @@ simultaneously learn compact and smooth object surfaces.
         ICCV 2021.
       <br>
     </div>
+
     <div class="citation">
 		Peng Wang, Lingjie Liu, Yuan Liu, Christian Theobalt, Taku Komura, Wenping Wang.
 		<a href="https://arxiv.org/abs/2106.10689">
@@ -228,6 +269,7 @@ simultaneously learn compact and smooth object surfaces.
 		NeurIPS 2021.
       <br>
     </div>
+
 	<div class="citation">
 		Lior Yariv, Jiatao Gu, Yoni Kasten, Yaron Lipman.
 		<a href="https://arxiv.org/abs/2106.12052">

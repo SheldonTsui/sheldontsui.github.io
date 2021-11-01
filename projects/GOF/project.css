@@ -61,6 +61,8 @@ hr.smooth
     background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
 }
 
+hr {margin: 2em; margin-top:5px; margin-bottom:10px;}
+
 a:link { color: #0066CC; text-decoration: none }
 a:visited { color: #743399; text-decoration: none }
 a:hover { color: #FF4B33; text-decoration: none }
