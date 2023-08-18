@@ -45,7 +45,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MATLABER: Material-Aware Text-to-3D via LAtent BRDF auto-EncodeR</h1>
+          <h1 class="title is-1 publication-title">MATLABER</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://sheldontsui.github.io">Xudong Xu</a><sup>1</sup>,</span>
@@ -67,7 +67,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./assets/matlaber.pdf"
+                <a href="./pdfdisplay.html"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -157,7 +157,7 @@
             We train this auto-encoder with large-scale real-world BRDF collections and ensure the smoothness of its latent space, which implicitly acts as a natural distribution of materials. 
             During appearance modeling in text-to-3D generation, the latent BRDF embeddings, rather than BRDF parameters, are predicted via a material network.
             Through exhaustive experiments, our approach demonstrates the superiority over existing methods in generating realistic and coherent object materials.
-            Moreover, high-quality materials naturally enable multiple downstream tasks such as relighting and material editing.
+            Moreover, high-quality materials naturally enable multiple downstream tasks such as relighting, material editing, and scene manipulation.
           </p>
         </div>
       </div>
@@ -194,13 +194,13 @@
             <img src="assets/pineline.jpg" alt="Pulpit rock" width="2050" height="534">
             <p style="font-size:15px;">
                 <b>Left</b>: Our latent BRDF auto-encoder is trained on the TwoShotBRDF dataset with four losses, i.e., reconstruction loss, KL divergence loss, smoothness loss, and cyclic loss.
-                Imposing KL and smoothness loss on latent embeddings encourages a smooth latent space.
+                Imposing KL divergence and smoothness loss on latent embeddings encourages a smooth latent space.
                 
             </p>
             <p style="font-size:15px;">
               <b>Right</b>: Instead of predicting BRDF materials directly, we leverage a material MLP <b>&gamma;</b> to generate latent BRDF code <b>z</b>, which is then decoded to 7-dim BRDF parameters via our pretrained decoder.
                 Similar to prior works, the SDS loss can be applied to the rendered images, which empowers the training of our material MLP network.
-                (Note that, roughness <b>k<sub>r</sub></b> is scalar and we visualize it with the green channel here.)
+                (Note that, roughness <b>k<sub>r</sub></b> is scalar and we visualize it with the green channel in this paper.)
             </p>
           </div>
         </div>
@@ -280,31 +280,19 @@
             <td colspan="2" align="center"><span style="font-size:18px;">A blue tulip</span></td>
           </tr>
         </table>
-          <div class="column content">
-            <p style="font-size:15px;">
-                The gallery of our text-to-3D results. Shapes, normal maps, and shaded images from two random viewpoints are presented.
-            </p>
-          </div>
         <div class="column content">
-            <img src="assets/relight.jpg" alt="Pulpit rock" width="3927" height="2296">
-            <p style="font-size:15px;">
-              On the left side, we list the generated BRDF materials, including diffuse, specular, and roughness. The relit images under a rotating environment light are presented on the right side.
+          <p style="font-size:15px;">
+            The gallery of our text-to-3D generation results. Shapes, normal maps, and shaded images from two random viewpoints are presented here.
           </p>
-          </div>
+        </div>
+        <div class="column content">
+          <img src="assets/relight.jpg" alt="Pulpit rock" width="3927" height="2296">
+          <p style="font-size:15px;">
+            On the left side, we list the generated BRDF materials, including diffuse, specular, and roughness. The relit images under a rotating environment light are presented on the right side.
+          </p>
         </div>
       </div>
-
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <div class="columns is-centered has-text-centered">
-          <div class="column content">
-            <img src="assets/relighting.jpg" alt="Pulpit rock" width="1325" height="1532">
-            <p>
-              On the left side, we list the generated BRDF materials, including diffuse, specular, and roughness. The relit images under a rotating environment light are presented on the right side.
-            </p>
-          </div>
-        </div>
-      </div> -->
+    </div>
 
 
   </div>
@@ -320,7 +308,7 @@
 
         <div class="content has-text-justified">
           <p>
-            There are a lot of excellent works that are related to MATLABER.
+            There are a lot of excellent works that are related to ProlificDreamer.
           </p>
           <p>
             <a href="https://dreamfusion3d.github.io/">DreamFusion: Text-to-3D using 2D Diffusion</a>
@@ -336,10 +324,6 @@
           </p>
           <p>
             <a href="https://github.com/eladrich/latent-nerf">Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures</a>
-          </p>
-          <p>
-            <a href="https://ml.cs.tsinghua.edu.cn/prolificdreamer/">ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation
-            </a>
           </p>
         </div>
       </div>
