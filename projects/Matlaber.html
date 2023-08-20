@@ -225,10 +225,10 @@
         </div>
         <table>
           <tr>
-            <td><img src="./assets/bread.gif"></td>
-            <td><img src="./assets/bread_normal.gif"></td>
-            <td><img src="./assets/cookie.gif"></td>
-            <td><img src="./assets/cookie_normal.gif"></td>
+            <td><img src="./assets/gallery/bread.gif"></td>
+            <td><img src="./assets/gallery/bread_normal.gif"></td>
+            <td><img src="./assets/gallery/cookie.gif"></td>
+            <td><img src="./assets/gallery/cookie_normal.gif"></td>
           </tr>
           <tr>
             <td colspan="2" align="center"><span style="font-size:18px;">A sliced loaf of fresh bread</span></td>
@@ -236,10 +236,10 @@
           </tr>
 
           <tr>
-            <td><img src="./assets/cottage.gif"></td>
-            <td><img src="./assets/cottage_normal.gif"></td>
-            <td><img src="./assets/croissant.gif"></td>
-            <td><img src="./assets/croissant_normal.gif"></td>
+            <td><img src="./assets/gallery/cottage.gif"></td>
+            <td><img src="./assets/gallery/cottage_normal.gif"></td>
+            <td><img src="./assets/gallery/croissant.gif"></td>
+            <td><img src="./assets/gallery/croissant_normal.gif"></td>
           </tr>
           <tr>
             <td colspan="2" align="center"><span style="font-size:18px;">A 3D model of an adorable cottage with a thatched roof</span>
@@ -248,10 +248,10 @@
           </tr>
 
           <tr>
-            <td><img src="./assets/hamburger.gif"></td>
-            <td><img src="./assets/hamburger_normal.gif"></td>
-            <td><img src="./assets/icecream.gif"></td>
-            <td><img src="./assets/icecream_normal.gif"></td>
+            <td><img src="./assets/gallery/hamburger.gif"></td>
+            <td><img src="./assets/gallery/hamburger_normal.gif"></td>
+            <td><img src="./assets/gallery/icecream.gif"></td>
+            <td><img src="./assets/gallery/icecream_normal.gif"></td>
           </tr>
           <tr>
             <td colspan="2" align="center"><span style="font-size:18px;">A DSLR photo of a hamburger</span></td>
@@ -259,10 +259,10 @@
           </tr>
 
           <tr>
-            <td><img src="./assets/pineapple.gif"></td>
-            <td><img src="./assets/pineapple_normal.gif"></td>
-            <td><img src="./assets/rabbit.gif"></td>
-            <td><img src="./assets/rabbit_normal.gif"></td>
+            <td><img src="./assets/gallery/pineapple.gif"></td>
+            <td><img src="./assets/gallery/pineapple_normal.gif"></td>
+            <td><img src="./assets/gallery/rabbit.gif"></td>
+            <td><img src="./assets/gallery/rabbit_normal.gif"></td>
           </tr>
           <tr>
             <td colspan="2" align="center"><span style="font-size:18px;">A pineapple</span></td>
@@ -270,10 +270,10 @@
           </tr>
 
           <tr>
-            <td><img src="./assets/sushi.gif"></td>
-            <td><img src="./assets/sushi_normal.gif"></td>
-            <td><img src="./assets/tulip.gif"></td>
-            <td><img src="./assets/tulip_normal.gif"></td>
+            <td><img src="./assets/gallery/sushi.gif"></td>
+            <td><img src="./assets/gallery/sushi_normal.gif"></td>
+            <td><img src="./assets/gallery/tulip.gif"></td>
+            <td><img src="./assets/gallery/tulip_normal.gif"></td>
           </tr>
           <tr>
             <td colspan="2" align="center"><span style="font-size:18px;">A car made out of sushi</span></td>
@@ -285,26 +285,42 @@
                 The gallery of our text-to-3D results. Shapes, normal maps, and shaded images from two random viewpoints are presented.
             </p>
           </div>
-        <div class="column content">
-            <img src="assets/relight.jpg" alt="Pulpit rock" width="3927" height="2296">
-            <p style="font-size:15px;">
-              On the left side, we list the generated BRDF materials, including diffuse, specular, and roughness. The relit images under a rotating environment light are presented on the right side.
-          </p>
-          </div>
-        </div>
-      </div>
-
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <div class="columns is-centered has-text-centered">
+        <table>
+          <tr>
+            <td><img src="./assets/relighting/goblet.gif"></td>
+            <td><img src="./assets/relighting/strawberry.gif"></td>
+            <td><img src="./assets/relighting/pancake.gif"></td>
+            <td><img src="./assets/relighting/tulip.gif"></td>
+          </tr>
+        </table>
           <div class="column content">
-            <img src="assets/relighting.jpg" alt="Pulpit rock" width="1325" height="1532">
-            <p>
-              On the left side, we list the generated BRDF materials, including diffuse, specular, and roughness. The relit images under a rotating environment light are presented on the right side.
+            <p style="font-size:17px;">
+                <strong>Relighting results</strong>. Our generated 3D assets are <strong>relit</strong> under a rotating environment light.
             </p>
           </div>
+        <div class="column content">
+            <img src="assets/interp.jpg" alt="Pulpit rock" width="2142" height="661">
         </div>
-      </div> -->
+        <table>
+          <tr>
+            <td><img src="./assets/interp/goblet/start.gif"></td>
+            <td><img src="./assets/interp/goblet/int1.gif"></td>
+            <td><img src="./assets/interp/goblet/int2.gif"></td>
+            <td><img src="./assets/interp/goblet/end.gif"></td>
+            <td><img src="./assets/interp/tulip/start.gif"></td>
+            <td><img src="./assets/interp/tulip/int1.gif"></td>
+            <td><img src="./assets/interp/tulip/int2.gif"></td>
+            <td><img src="./assets/interp/tulip/end.gif"></td>
+          </tr>
+        </table>
+        <div class="column content">
+          <p style="font-size:15px;">
+              <strong>Material interpolation</strong>. Thanks to the smooth latent space of BRDF auto-encoder, we can conduct a linear interpolation on the BRDF embeddings. As shown, a golden
+              goblet will turn into a silver goblet while the color of the tulip changes from blue to red gradually.
+          </p>
+        </div>
+        </div>
+      </div>
 
 
   </div>
