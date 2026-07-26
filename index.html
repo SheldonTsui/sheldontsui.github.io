@@ -73,6 +73,21 @@
     span.highlight {
       background-color: #ffffd0;
     }
+
+    .industry-experience {
+      border-collapse: separate;
+      border-spacing: 0 14px;
+    }
+
+    .industry-experience p {
+      margin: 0;
+      line-height: 1.35;
+    }
+
+    .industry-experience .experience-role {
+      display: block;
+      margin-top: 4px;
+    }
   </style>
   <style type="text/css">
     #sectiontohide {
@@ -109,17 +124,19 @@
                 <name>Xudong Xu &nbsp; &nbsp; 徐旭东</name>
               </p>
               <p>
-                I am currently a researcher at Shanghai Artificial Intelligence Laboratory, working on Embodied AI.
+                I am a researcher at Galbot, working on Embodied AI.
+              </p>
+              <p>
                 I recieved my Ph.D. degree from <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory</a> in the 
                 Chinese University of Hong Kong, advised by <a href="http://dahua.me/">Prof. Dahua Lin</a>.
                 I recieved my B.E in Automation from <a href="https://www.nju.edu.cn/">Nanjing University</a>
                 in June 2018.
               </p>
               <p>
-                My current research interests lie in <strong>Interactive Scene Generation and World Models in Embodied AI</strong>,
-                especially focusing on compositional scene generation and interactive object generation.
-                I am looking for highly motivated interns at <a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a>.
-                Shoot me an email (xuxudong@pjlab.org.cn) if you are interested.
+                My research interests lie in <strong>creating interactive scenes for humanoid robotics</strong>,
+                with a focus on <strong>humanoid navigation and loco-manipulation</strong>.<br>
+                I am looking for highly motivated interns at <a href="https://www.galbot.com/">Galbot</a>.
+                Please feel free to email me (xuxudong@galbot.com) if you are interested.
               </p>
               <p align=center>
                 <a href="https://www.linkedin.com/in/xudong-xu-5bb7b3173/"> LinkedIn </a> /
@@ -192,7 +209,21 @@
           </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellpadding="10">
+        <table class="industry-experience" width="100%" align="center" border="0" cellpadding="10">
+          <tr>
+            <td width="25%" align="center">
+              <img src="pictures/Shanghai_AI_Laboratory.png" alt="Shanghai AI Laboratory" width="130" height="75">
+            </td>
+            <td width="75%" valign="top">
+              <p>
+                <strong>Mar. 2023 - Jul. 2026</strong>,
+                <i>
+                  <b>Shanghai AI Laboratory</b>
+                </i>
+                <span class="experience-role">Researcher. <i>Shanghai, China</i></span>
+              </p>
+            </td>
+          </tr>
           <tr>
             <td width="25%" align="center">
               <img src="pictures/meta.png" alt="Meta" width="95" height="80">
@@ -202,9 +233,8 @@
                 <strong>June 2022 - Nov. 2022</strong>,
                 <i>
                   <b>Meta Reality Labs, Pittsburgh</b>
-                </i></p>
-                <br>
-                Research Scientist Intern. <i>Pittsburgh, PA, USA</i><br>
+                </i>
+                <span class="experience-role">Research Scientist Intern. <i>Pittsburgh, PA, USA</i></span>
               </p>
             </td>
           </tr>
@@ -219,6 +249,48 @@
           <td width="100%" valign="middle">
             <span class="author cy">*</span>Equal contribution <sup>+</sup>Corresponding author/Project lead
           </td>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="10" cellpadding="10">
+          <tr>
+            <td width="25%" align="center">
+              <img src="pictures/RoboSnap.png" alt="robosnap" width="320" height="180">
+            </td>
+            <td width="75%" valign="center">
+              <p>
+                <papertitle>RoboSnap: One-Shot Real-to-Sim Scene Generation for Generalizable Robot Learning and Evaluation</papertitle>
+                <br>
+                Shujie Zhang<sup>*</sup>, Jingkun Yi<sup>*</sup>, ..., <strong>Xudong Xu<sup>+</sup></strong>, Weinan Zhang, Chunhua Shen
+                <br>
+                <em>Arxiv</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2607.06699">[paper]</a>
+                <a href="https://github.com/robosnap/robosnap">[code]</a>
+                <a href="https://robosnap.github.io/">[project]</a>
+                <br>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="10" cellpadding="10">
+          <tr>
+            <td width="25%" align="center">
+              <img src="pictures/EBench.png" alt="ebench" width="320" height="160">
+            </td>
+            <td width="75%" valign="center">
+              <p>
+                <papertitle>EBench: Elemental Diagnosis of Generalist Mobile Manipulation Policies</papertitle>
+                <br>
+                Ning Gao, Jinliang Zheng, Xing Gao, ..., <strong>Xudong Xu</strong>, ..., Chunhua Shen
+                <br>
+                <em>Arxiv</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2606.18239">[paper]</a>
+                <a href="https://github.com/InternRobotics/EBench">[code]</a>
+                <a href="https://internrobotics.shlab.org.cn/eval">[project]</a>
+                <br>
+            </td>
+          </tr>
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="10" cellpadding="10">
@@ -718,13 +790,13 @@
           </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="100%" valign="middle">
               <heading>Current Students/Interns</heading>
             </td>
           </tr>
-        </table>
+        </table> -->
         <!-- <ul>
           <li>
             <p><a href="https://scholar.google.com/citations?user=CJNkSiUAAAAJ&hl=en">Jingkun Hao</a> (SJTU)</p>
@@ -740,16 +812,16 @@
             <p><a href="https://kiteretsu77.github.io/BoyangWang/">Boyang Wang</a> (UVA)</p>
           </li>
         </ul> -->
-        <ul>
+        <!-- <ul>
           <li>
             <p><a href="https://openreview.net/profile?id=%7EWeipeng_Zhong1">Weipeng Zhong</a> (SJTU)</p>
           </li>
-        </ul>
-        <ul>
+        </ul> -->
+        <!-- <ul>
           <li>
             <p><a href="https://hishujie.github.io/">Shujie Zhang</a> (Tsinghua)</p>
           </li>
-        </ul>
+        </ul> -->
         <!-- <ul>
           <li>
             <p><a href="">Zhen Luo</a> (SII)</p>
@@ -761,17 +833,17 @@
             <p><a href="">Mingda Jia</a> (PKU)</p>
           </li>
         </ul> -->
-        <ul>
+        <!-- <ul>
           <li>
             <p><a href="https://scholar.google.com/citations?user=PSq6nxcAAAAJ&hl=zh-CN">Yixuan Yang</a> (Warw)</p>
           </li>
-        </ul>
+        </ul> -->
         
-        <ul>
+        <!-- <ul>
           <li>
             <p><a href="https://zhiqili-cg.github.io/">Zhiqi Li</a> (Georgia Tech)</p>
           </li>
-        </ul>
+        </ul> -->
 
         <table width="100%" align="center" border="0" cellspacing="10" cellpadding="20">
           <tr>
@@ -824,7 +896,7 @@
         <footer class="footer">
           <div class="container">
             <p>
-              &nbsp;&nbsp;&nbsp;Updated June 2026</p>
+              &nbsp;&nbsp;&nbsp;Updated July 2026</p>
             </p>
             <p align=right>
               <a href="https://ai.stanford.edu/~kaidicao/"> Page Template </a>
